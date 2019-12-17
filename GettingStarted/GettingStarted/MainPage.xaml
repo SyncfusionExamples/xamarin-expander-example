@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="GettingStarted.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:GettingStarted"
+    xmlns:syncfusion="clr-namespace:Syncfusion.XForms.Expander;assembly=Syncfusion.Expander.XForms">
+
+    <ContentPage.Content>
+        <ScrollView BackgroundColor="#EDF2F5">
+            <StackLayout>
+                <syncfusion:SfExpander>
+                    <syncfusion:SfExpander.Header>
+                        <Grid>
+                            <Label
+                                Text="Invoice Date"
+                                TextColor="#495F6E"
+                                VerticalTextAlignment="Center" />
+                        </Grid>
+                    </syncfusion:SfExpander.Header>
+
+                    <syncfusion:SfExpander.Content>
+                        <Grid>
+                            <Label
+                                BackgroundColor="#FFFFFF"
+                                HeightRequest="50"
+                                Text="11.03 AM, 15 January 2019"
+                                TextColor="#303030"
+                                VerticalTextAlignment="Center" />
+                        </Grid>
+                    </syncfusion:SfExpander.Content>
+                </syncfusion:SfExpander>
+
+                <syncfusion:SfExpander>
+                    <syncfusion:SfExpander.Header>
+                        <Grid>
+                            <Label
+                                Text="Item (s)"
+                                TextColor="#495F6E"
+                                VerticalTextAlignment="Center" />
+                        </Grid>
+                    </syncfusion:SfExpander.Header>
+
+                    <syncfusion:SfExpander.Content>
+                        <Grid Padding="10,10,10,10" BackgroundColor="#FFFFFF">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Label Text="2018 Subaru Outback" TextColor="#303030" />
+                            <Label
+                                Grid.Row="1"
+                                Text="All-Weather Mats"
+                                TextColor="#303030" />
+                            <Label
+                                Grid.Row="2"
+                                Text="Door Edge Guard Kit"
+                                TextColor="#303030" />
+                            <Label
+                                Grid.Row="3"
+                                Text="Rear Bumper Cover"
+                                TextColor="#303030" />
+                            <Label
+                                Grid.Row="4"
+                                FontAttributes="Bold"
+                                Text="Total Amount Paid"
+                                TextColor="#303030" />
+                            <Label
+                                Grid.Column="1"
+                                HorizontalTextAlignment="End"
+                                Text="$35,705.00"
+                                TextColor="#303030" />
+                            <Label
+                                Grid.Row="1"
+                                Grid.Column="1"
+                                HorizontalTextAlignment="End"
+                                Text="$105.00"
+                                TextColor="#303030" />
+                            <Label
+                                Grid.Row="2"
+                                Grid.Column="1"
+                                HorizontalTextAlignment="End"
+                                Text="$100.00"
+                                TextColor="#303030" />
+                            <Label
+                                Grid.Row="3"
+                                Grid.Column="1"
+                                HorizontalTextAlignment="End"
+                                Text="$95.00"
+                                TextColor="#303030" />
+                            <Label
+                                Grid.Row="4"
+                                Grid.Column="1"
+                                FontAttributes="Bold"
+                                HorizontalTextAlignment="End"
+                                Text="$36,000.00"
+                                TextColor="#303030" />
+                        </Grid>
+                    </syncfusion:SfExpander.Content>
+                </syncfusion:SfExpander>
+
+                <syncfusion:SfExpander>
+                    <syncfusion:SfExpander.Header>
+                        <Grid>
+                            <Label
+                                Text="Payment Details"
+                                TextColor="#495F6E"
+                                VerticalTextAlignment="Center" />
+                        </Grid>
+                    </syncfusion:SfExpander.Header>
+
+                    <syncfusion:SfExpander.Content>
+                        <Grid Padding="10,10,10,10" BackgroundColor="#FFFFFF">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Label Text="Card Payment" TextColor="#303030" />
+                            <Label
+                                Grid.Row="1"
+                                Text="Third-Party coupons"
+                                TextColor="#303030" />
+                            <Label
+                                Grid.Row="2"
+                                FontAttributes="Bold"
+                                Text="Total Amount Paid"
+                                TextColor="#303030" />
+                            <Label
+                                Grid.Column="1"
+                                HorizontalTextAlignment="End"
+                                Text="$31,000.00"
+                                TextColor="#303030" />
+                            <Label
+                                Grid.Row="1"
+                                Grid.Column="1"
+                                HorizontalTextAlignment="End"
+                                Text="$5,000.00"
+                                TextColor="#303030" />
+                            <Label
+                                Grid.Row="2"
+                                Grid.Column="1"
+                                FontAttributes="Bold"
+                                HorizontalTextAlignment="End"
+                                Text="$36,000.00"
+                                TextColor="#303030" />
+                        </Grid>
+                    </syncfusion:SfExpander.Content>
+                </syncfusion:SfExpander>
+
+            </StackLayout>
+        </ScrollView>
+
+    </ContentPage.Content>
+
+</ContentPage>
